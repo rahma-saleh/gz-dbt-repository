@@ -21,7 +21,7 @@ sources:
             description: the quantity of product
         tests:
           - unique:
-            column_name: "(orders _id||'-'||pdt_id)"
+            column_name: "(orders _id || '-' || pdt_id)"
 
       - name: product
         identifier: raw_gz_product
@@ -29,7 +29,7 @@ sources:
         columns:
           - name: products_id
             description: primary key of the table
-            tests:
+        tests:
               - unique
               - not_null
       - name: ship
@@ -38,6 +38,6 @@ sources:
         columns:
           - name: orders_id
             description: primary key of the table
-            tests:
+        tests:
               - unique
               - not_null
