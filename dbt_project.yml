@@ -36,6 +36,6 @@ clean-targets: # directories to be removed by `dbt clean`
 models:
   greenweez_project:
     mart:
-      materialized: table
+      +materialized: table
       finance:
-        schema: finance
+        +schema: finance
