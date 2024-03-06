@@ -40,8 +40,8 @@ sources:
               - unique
               - not_null
 models:
-   - name: int_sales_margin
-     tests:
+  - name: int_sales_margin
+    tests:
       - unique:
           column_name: "(orders_id || '-' || products_id)"
       - not_null:
