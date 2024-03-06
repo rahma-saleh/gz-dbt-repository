@@ -11,7 +11,7 @@ sources:
           - name: date_date
             description: the date of purchase
           - name: orders_id
-            description: foreign key 
+            description: foreign key
           - name: pdt_id
             description: foregin key to product
           - name: revenue
