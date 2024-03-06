@@ -19,9 +19,9 @@ sources:
             description: the revenue
           - name: quantity
             description: the quantity of product
-        tests:
-          - unique:
-            column_name: "(orders _id || '-' || pdt_id)"
+            tests:
+              - unique:
+                column_name: "(orders_id||'-'||pdt_id)"
 
       - name: product
         identifier: raw_gz_product
@@ -30,8 +30,8 @@ sources:
           - name: products_id
             description: primary key of the table
         tests:
-              - unique
-              - not_null
+             - unique
+             - not_null
       - name: ship
         identifier: raw_gz_ship
         description: ship of Greenweea
@@ -39,5 +39,5 @@ sources:
           - name: orders_id
             description: primary key of the table
         tests:
-              - unique
-              - not_null
+             - unique
+             - not_null
