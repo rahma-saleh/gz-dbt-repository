@@ -20,7 +20,7 @@ sources:
             description: the quantity of product
             tests:
               - unique:
-                column_name: "(orders_id||'_'||pdt_id)"
+                column_name: "(orders_id ||'-'|| dbt_id)"
 
       - name: product
         identifier: raw_gz_product
