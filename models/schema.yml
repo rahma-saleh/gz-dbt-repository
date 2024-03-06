@@ -28,25 +28,15 @@ sources:
         columns:
           - name: products_id
             description: primary key of the table
-          - name: purchse_price
-            constraints:
-              - type: the purchse price
-        tests:
-          - unique
-          - not_null
+            tests:
+             - unique
+             - not_null
       - name: ship
         identifier: raw_gz_ship
         description: ship of Greenweea
         columns:
           - name: orders_id
             description: primary key of the table
-          - name: shipping_fee
-            description: the price the customr pays
-          - name: log_Cost
-            description: the cost
-          - name: ship_cost
-            description: the shipping cost
-
-        tests:
-          - unique
-          - not_null
+            tests:
+             - unique
+             - not_null
