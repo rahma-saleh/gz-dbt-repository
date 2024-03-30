@@ -1,8 +1,8 @@
-SELECT
+select
     date_date,
-    SUM(CAST(ads_cost AS FLOAT64)) as ads_cost,
-    SUM(impression) as ads_impression,
-    SUM(click) as ads_clicks
-FROM {{ ref("int_campaigns") }}
-GROUP BY date_date
-ORDER BY date_date DESC
+    sum(ads_cost) as ads_cost,
+    sum(impression) as ads_impression,
+    sum(click) as ads_clicks
+from {{ ref("int_campaigns") }}
+group by date_date
+order by date_date desc
