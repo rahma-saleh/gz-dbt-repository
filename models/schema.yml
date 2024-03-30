@@ -39,7 +39,7 @@ sources:
             tests:
               - unique
               - not_null
-              
+
       - name: adwords
         identifier: raw_gz_adwords
         description: Information about adwords platform Generate model
@@ -52,3 +52,13 @@ sources:
       - name: facebook
         identifier: raw_gz_facebook
         description: Information about facebook platform
+
+      - name: int_campaigns
+        description: data from all campaigns
+    tests:
+      - unique:
+          column_name: "(campaign_key || '_' || date_date)"
+      - not_null:
+          column_name:
+            - paid_source
+            - campaign_name
