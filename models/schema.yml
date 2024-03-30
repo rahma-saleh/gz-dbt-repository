@@ -39,7 +39,10 @@ sources:
             tests:
               - unique
               - not_null
-
+sources:
+  - name: raw
+    schema: gz_raw_data
+    tables:
       - name: raw_gz_adwords
         description: Information about adwords platform
       - name: raw_gz_bing
