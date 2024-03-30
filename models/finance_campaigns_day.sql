@@ -1,9 +1,9 @@
 select
     date_date,
-    operational_margin - ads_cost as ads_margin,
+    operational_margin - cast(ads_cost as float64) as ads_margin,
     round(average_basket, 2) as average_basket
     operational_margin,
-    ads_cost,
+    cast(ads_cost as float64) as ads_cost,
     ads_impressionn,
     ads_clicks,
     quantity,
