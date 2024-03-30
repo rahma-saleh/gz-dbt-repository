@@ -43,11 +43,15 @@ sources:
   - name: raw
     schema: gz_raw_data
     tables:
-      - name: raw_gz_adwords
-        description: Information about adwords platform
-      - name: raw_gz_bing
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: Information about adwords platform Generate model
+      - name: bing
+        identifier: raw_gz_bing
         description: Information about bing platform
-      - name: raw_gz_criteo
+      - name: criteo
+        identifier: raw_gz_criteo
         description: Information about criteo platform
-      - name: raw_gz_facebook
+      - name: facebook
+        identifier: raw_gz_facebook
         description: Information about facebook platform
