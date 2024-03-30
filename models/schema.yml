@@ -39,10 +39,7 @@ sources:
             tests:
               - unique
               - not_null
-sources:
-  - name: raw
-    tables:
-      - name: gz_raw_data
+
       - name: adwords
         identifier: raw_gz_adwords
         description: Information about adwords platform
